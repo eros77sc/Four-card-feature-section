@@ -139,7 +139,7 @@ img {
     
     .card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+        grid-template-columns: repeat(3, 35em);
         grid-template-rows: repeat(3, 25em);
         gap: 1em;
         align-content: center;
