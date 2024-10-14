@@ -1,32 +1,32 @@
 *, *::before, *::after {
     box-sizing: border-box;
-  }
+}
 
-  * {
+* {
     margin: 0;
-  }
+}
 
-  body {
+body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-  }
+}
 
-  img, picture, video, canvas, svg {
+img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
-  }
+}
 
-  input, button, textarea, select {
+input, button, textarea, select {
     font: inherit;
-  }
+}
 
-  p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-  }
+}
 
-  #root, #__next {
+#root, #__next {
     isolation: isolate;
-  }
+}
 
 html {
     font-size: 62.5%;
@@ -48,7 +48,7 @@ main {
 
 h1 {
     font-weight: 200;
-    font-size: 1.5em;
+    font-size: 2.3em;
     line-height: 1.5;
     margin-block-end: 1em;
     text-align: center;
@@ -59,17 +59,20 @@ h1 {
 }
 
 .subtitle {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
     color: hsl(229, 6%, 66%);
     margin-block-end: 4em;
+    padding-inline: 1em;
 }
 
 .card {
     background-color: hsl(0, 0%, 98%);
     max-inline-size: 100%;
+    height: 20em;
     border-radius: 0.5em;
     padding: 1.5em;
+    margin-inline: 2em;
     margin-block-end: 3em;
     box-shadow: 0.1em 1.5em 2em -1em hsla(234, 12%, 34%, 0.5);
 
@@ -78,35 +81,35 @@ h1 {
 }
 
 .supervisor {
-    border-top: 0.3em solid hsl(180, 62%, 55%);
+    border-top: 0.5em solid hsl(180, 62%, 55%);
 }
 
 .builder {
-    border-top: 0.3em solid hsl(0, 78%, 62%);
+    border-top: 0.5em solid hsl(0, 78%, 62%);
 }
 
 .karma {
-    border-top: 0.3em solid hsl(34, 97%, 64%);
+    border-top: 0.5em solid hsl(34, 97%, 64%);
 }
 
 .calculator {
-    border-top: 0.3em solid hsl(212, 86%, 64%);
+    border-top: 0.5em solid hsl(212, 86%, 64%);
 }
 
 .title {
-    font-size: 1.3em;
+    font-size: 1.7em;
     font-weight: 700;
     margin-block-end: 0.5em;
 }
 
 .description{
     color: hsl(229, 6%, 66%);
-    font-size: 0.9em;
+    font-size: 1.2em;
     margin-block-end: 3em;
 }
 
 img {
-    max-width: 4em;
+    max-width: 6em;
     align-self: end;
 }
 .attribution { font-size: 11px; text-align: center; }
@@ -121,32 +124,42 @@ img {
     }
     
     h1 {
-        font-size: 2em;
+        font-size: 3em;
         margin-block-end: 0.5em;
     }
         
     .subtitle {
         margin-block-end: 4em;
         max-width: 35em;
-        margin-inline-start: 30em;
+        margin-inline-start: 37em;
         text-align: center;
         word-wrap: break-word;
+        font-size: 1.5em;
     }
     
     .card-container {
         display: grid;
-        grid-template-columns: repeat(3, 23em);
-        grid-template-rows: repeat(3, 18em);
-        gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+        grid-template-rows: repeat(3, 25em);
+        gap: 1em;
         align-content: center;
         justify-content: center;
     }
     .card {
-        max-inline-size: 25em;
+        max-inline-size: 35em;
+        
+        height: auto;
         padding: 2em;
-        margin-block-end: 1em;
-     }
+        margin-block-end: 2em;
+    }
 
+    .title{
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 1.5em;
+    }
     .supervisor {
         grid-row: 1/3;
         align-self: center;
