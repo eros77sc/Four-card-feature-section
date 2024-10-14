@@ -1,0 +1,161 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(234, 12%, 34%);
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+main {
+    margin: 4em 2em;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-block-end: 1em;
+    text-align: center;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1em;
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+    margin-block-end: 4em;
+}
+
+.card {
+    background-color: hsl(0, 0%, 98%);
+    max-inline-size: 100%;
+    border-radius: 0.5em;
+    padding: 1.5em;
+    margin-block-end: 3em;
+    box-shadow: 0.1em 1.5em 2em -1em hsla(234, 12%, 34%, 0.5);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.supervisor {
+    border-top: 0.3em solid hsl(180, 62%, 55%);
+}
+
+.builder {
+    border-top: 0.3em solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 0.3em solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 0.3em solid hsl(212, 86%, 64%);
+}
+
+.title {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-block-end: 0.5em;
+}
+
+.description{
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9em;
+    margin-block-end: 3em;
+}
+
+img {
+    max-width: 4em;
+    align-self: end;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 768px) {
+    body {
+        display: block;
+    }
+    main {
+        margin: 4em 8em;
+    }
+    
+    h1 {
+        font-size: 2em;
+        margin-block-end: 0.5em;
+    }
+        
+    .subtitle {
+        margin-block-end: 4em;
+        max-width: 35em;
+        margin-inline-start: 30em;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 23em);
+        grid-template-rows: repeat(3, 18em);
+        gap: 2em;
+        align-content: center;
+        justify-content: center;
+    }
+    .card {
+        max-inline-size: 25em;
+        padding: 2em;
+        margin-block-end: 1em;
+     }
+
+    .supervisor {
+        grid-row: 1/3;
+        align-self: center;
+    }
+
+    .calculator {
+        grid-column: 3/4;
+        grid-row: 1/3;
+        align-self: center;
+    }
+    .attribution { font-size: 1.6em; text-align: center; }
+}
